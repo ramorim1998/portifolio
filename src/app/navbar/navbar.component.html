@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">Rafael Amorim</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" [class.active]="aba == 'home'" (click)="abaChange('home')"
+                routerLink="home">Home </a>
+            <a class="nav-item nav-link" [class.active]="aba == 'cv'" (click)="abaChange('cv')"
+                routerLink="curriculum-vitae">Curriculum Vitae</a>
+            <a class="nav-item nav-link" [class.active]="aba == 'contact'" (click)="abaChange('contact')"
+                routerLink="contact">Contact</a>
+        </div>
+    </div>
+</nav>
